@@ -9,11 +9,14 @@ int InsertionSort(int *in, int inlen) {
 	for (i = 1; i < inlen; i++) {
 		temp = in[i];
 		j = i - 1;
-		while (temp < in[j]) {
+		if (temp >= in[j])
+			continue;
+
+		while (temp < in[j] && j >= 0) {
 			in[j+1] = in[j];
 			j--;
 		}
-		in[j] = temp;
+		in[j+1] = temp;
 	}
  	return 0;
 }

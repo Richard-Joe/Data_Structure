@@ -39,6 +39,9 @@ void MainMenu() {
 	printf("0: Bubble Sort\n");
 	printf("1: Selection Sort\n");
 	printf("2: Insertion Sort\n");
+	printf("3: Shell Sort\n");
+	printf("4: Merge Sort\n");
+	printf("5: Quick Sort\n");
 
 	printf("\nPlease Select: ");
 	scanf("%d", &key);
@@ -55,6 +58,18 @@ void MainMenu() {
 			break;
 		case 2:
 			InsertionSort(sortArray, SIZE);
+			BufPrint(sortArray, SIZE);
+			break;
+		case 3:
+			ShellSort(sortArray, SIZE);
+			BufPrint(sortArray, SIZE);
+			break;
+		case 4:
+			MergeSort(sortArray, SIZE, 0);
+			BufPrint(sortArray, SIZE);
+			break;
+		case 5:
+			QuickSort(sortArray, 0, SIZE - 1);
 			BufPrint(sortArray, SIZE);
 			break;
 		default:
