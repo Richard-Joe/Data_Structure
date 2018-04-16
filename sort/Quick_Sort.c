@@ -1,11 +1,5 @@
 #include <dstructure.h>
 
-void swap(int *in, int i, int j) {
-	int temp = in[i];
-	in[i] = in[j];
-	in[j] = temp;
-}
-
 int partition(int *in, int left, int right) {
 	int i, pivot = left, index = pivot + 1;
 

@@ -1,6 +1,8 @@
 #ifndef DSTRUCTURE_H
 #define DSTRUCTURE_H
 
+void swap(int *in, int i, int j);
+
 int BubbleSort(int *in, int inlen);
 
 int SelectionSort(int *in, int inlen);
@@ -12,6 +14,8 @@ int ShellSort(int *in, int inlen);
 int MergeSort(int *in, int inlen, int leftIndex);
 
 int QuickSort(int *in, int left, int right);
+
+int HeapSort(int *in, int inlen);
 
 int CountingSort(int *in, int inlen, int maxValue);
 

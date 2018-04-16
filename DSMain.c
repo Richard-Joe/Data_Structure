@@ -76,6 +76,8 @@ void MainMenu() {
 			BufPrint(sortArray, SIZE);
 			break;
 		case 6:
+			HeapSort(sortArray, SIZE);
+			BufPrint(sortArray, SIZE);
 			break;
 		case 7:
 			CountingSort(sortArray, SIZE, MAX);
