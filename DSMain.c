@@ -42,6 +42,9 @@ void MainMenu() {
 	printf("3: Shell Sort\n");
 	printf("4: Merge Sort\n");
 	printf("5: Quick Sort\n");
+	printf("6: Heap Sort\n");
+	printf("7: Counting Sort\n");
+	printf("8: Bucket Sort\n");
 
 	printf("\nPlease Select: ");
 	scanf("%d", &key);
@@ -70,6 +73,16 @@ void MainMenu() {
 			break;
 		case 5:
 			QuickSort(sortArray, 0, SIZE - 1);
+			BufPrint(sortArray, SIZE);
+			break;
+		case 6:
+			break;
+		case 7:
+			CountingSort(sortArray, SIZE, MAX);
+			BufPrint(sortArray, SIZE);
+			break;
+		case 8:
+			BucketSort(sortArray, SIZE);
 			BufPrint(sortArray, SIZE);
 			break;
 		default:
