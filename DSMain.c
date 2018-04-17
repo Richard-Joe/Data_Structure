@@ -45,6 +45,7 @@ void MainMenu() {
 	printf("6: Heap Sort\n");
 	printf("7: Counting Sort\n");
 	printf("8: Bucket Sort\n");
+	printf("9: Radix Sort\n");
 
 	printf("\nPlease Select: ");
 	scanf("%d", &key);
@@ -85,6 +86,10 @@ void MainMenu() {
 			break;
 		case 8:
 			BucketSort(sortArray, SIZE);
+			BufPrint(sortArray, SIZE);
+			break;
+		case 9:
+			RadixSort(sortArray, SIZE);
 			BufPrint(sortArray, SIZE);
 			break;
 		default:

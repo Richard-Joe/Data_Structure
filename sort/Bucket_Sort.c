@@ -1,5 +1,4 @@
 #include <dstructure.h>
-#include <stdio.h>
 #include <malloc.h>
 
 typedef struct StBucketElem {

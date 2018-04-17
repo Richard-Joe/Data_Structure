@@ -21,4 +21,6 @@ int CountingSort(int *in, int inlen, int maxValue);
 
 int BucketSort(int *in, int inlen);
 
+int RadixSort(int *in, int inlen);
+
 #endif // DSTRUCTURE_H
